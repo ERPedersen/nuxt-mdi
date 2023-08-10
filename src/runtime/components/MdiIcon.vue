@@ -5,7 +5,7 @@
     :viewbox="viewBox"
     :style="styles"
   >
-    <path :d="path"></path>
+    <path :d="path" />
   </svg>
 </template>
 
