@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { importIcon } from '../library/loader'
-import { Ref, ComputedRef, ref, watch } from 'vue'
+import { Ref, ComputedRef, computed, ref, watch } from 'vue'
 import { MdiIconProps } from './MdiIcon'
 
 const props = withDefaults(defineProps<MdiIconProps>(), {
