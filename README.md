@@ -21,7 +21,7 @@ Add 7,000+ icons to your Nuxt project, from [Material Design Icons](https://pict
 - TypeScript completion.
 - Zero imports needed.
 
-## Quick Setup
+## Getting Started
 
 ### Installation
 
