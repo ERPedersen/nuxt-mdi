@@ -1,16 +1,6 @@
 <template>
   <img
-    class="logo"
-    src="/icon-green-svg.svg" alt=""
+    src="/icon-green-svg.svg"
+    alt="nuxt-mdi"
   >
 </template>
-
-<script setup lang="ts">
-
-</script>
-
-<style scoped>
-.logo {
-  //height: 100%;
-}
-</style>
