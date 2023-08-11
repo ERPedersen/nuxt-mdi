@@ -12,7 +12,15 @@
 <script setup lang="ts">
 import { importIcon } from '../library/loader'
 import { Ref, ComputedRef, computed, ref, watch } from 'vue'
-import { MdiIconProps } from './MdiIcon'
+import { MdiIconString } from './MdiIcon'
+
+export interface MdiIconProps {
+  size?: string | number,
+  viewBox?: string,
+  flipX?: boolean,
+  flipY?: boolean,
+  icon: MdiIconString,
+}
 
 const props = withDefaults(defineProps<MdiIconProps>(), {
   size: '24',
@@ -48,5 +56,5 @@ svg {
 
 path {
   fill: currentColor;
-}
+}'
 </style>
