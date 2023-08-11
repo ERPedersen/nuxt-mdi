@@ -56,5 +56,5 @@ svg {
 
 path {
   fill: currentColor;
-}'
+}
 </style>
