@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.1
+
+[compare changes](https://undefined/undefined/compare/v0.0.5...v1.0.1)
+
+### 🏡 Chore
+
+- **readme:** Update documentation links (04a3b3f)
+
+### ❤️  Contributors
+
+- Emil Rosenius Pedersen <erp@emilrosenius.com>
+
 ## v0.0.5
 
 [compare changes](https://undefined/undefined/compare/v0.0.4...v0.0.5)
