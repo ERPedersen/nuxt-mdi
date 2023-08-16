@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.1
+
+[compare changes](https://undefined/undefined/compare/v1.0.1...v1.1.1)
+
+### 🏡 Chore
+
+- **release:** Bump version number (5bd80d0)
+
+### ❤️  Contributors
+
+- Emil Rosenius Pedersen <erp@emilrosenius.com>
+
 ## v1.0.1
 
 [compare changes](https://undefined/undefined/compare/v0.0.5...v1.0.1)
