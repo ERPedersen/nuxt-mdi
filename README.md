@@ -12,8 +12,8 @@
 Add 7,000+ icons to your Nuxt project, from [Material Design Icons](https://pictogrammers.com/library/mdi/).
 
 - [✨&nbsp;Release Notes](/CHANGELOG.md)
-- [🏀&nbsp;Online playground](https://stackblitz.com/github/your-org/nuxt-mdi?file=playground%2Fapp.vue)
-- [📖 &nbsp;Documentation](https://example.com)
+- [🏀&nbsp;Online playground](https://stackblitz.com/github/ERPedersen/nuxt-mdi?file=playground%2Fapp.vue)
+- [📖 &nbsp;Documentation](https://nuxt-mdi.emilrosenius.com)
 
 ## Features
 
