@@ -1,8 +1,6 @@
 <template>
   <svg
-    :width="size"
-    :height="size"
-    :viewbox="viewBox"
+    viewbox="0 0 24 24"
     :style="styles"
   >
     <path :d="path" />
@@ -15,16 +13,16 @@ import { Ref, ComputedRef, computed, ref, watch } from 'vue'
 import { MdiIconString } from './MdiIcon'
 
 export interface MdiIconProps {
-  size?: string | number,
-  viewBox?: string,
+  width?: string,
+  height?: string,
   flipX?: boolean,
   flipY?: boolean,
   icon: MdiIconString,
 }
 
 const props = withDefaults(defineProps<MdiIconProps>(), {
-  size: '24',
-  viewBox: '0 0 24 24',
+  width: '1em',
+  height: '1em',
   flipX: false,
   flipY: false,
 })
@@ -35,6 +33,8 @@ const path: Ref<string> = ref('')
 const styles: ComputedRef<any> = computed(() => ({
   '--flip-x': props.flipX ? '-1' : '1',
   '--flip-y': props.flipY ? '-1' : '1',
+  'width': '1em',
+  'height': 'auto',
 }))
 
 // Update the path with the corresponding SVG data from @mdi/js.

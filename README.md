@@ -61,9 +61,9 @@ The module will automatically make the `MdiIcon` component available to your app
 
 ### Props:
 
-- `size` (optional): The size of the icon. Defaults to `24px`.
 - `icon` (required): The name of the icon to display.
-- `viewBox` (optional): The viewBox of the icon. Defaults to `0 0 24 24`.
+- `flipX` (optional): Flip the icon on the X axis.
+- `flipY` (optional): Flip the icon on the Y axis.
 
 ## Configuration
 

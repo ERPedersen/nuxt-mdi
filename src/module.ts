@@ -21,7 +21,6 @@ export default defineNuxtModule<ModuleOptions>({
   },
   setup(options) {
     const resolver = createResolver(import.meta.url)
-
     addComponent({
       name: options.componentName,
       filePath: resolver.resolve('runtime/components/MdiIcon.vue'),
