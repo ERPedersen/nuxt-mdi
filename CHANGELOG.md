@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.2
+
+[compare changes](https://undefined/undefined/compare/v1.1.1...v1.1.2)
+
+### 🩹 Fixes
+
+- Icon sizes (65fe8ec)
+
+### ❤️  Contributors
+
+- Emil Rosenius Pedersen <erp@emilrosenius.com>
+
 ## v1.1.1
 
 [compare changes](https://undefined/undefined/compare/v1.0.1...v1.1.1)
