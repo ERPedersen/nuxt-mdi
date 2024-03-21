@@ -1,7 +1,9 @@
 <template>
   <svg
-    viewbox="0 0 24 24"
-    :style="styles"
+    viewBox="0 0 24 24"
+    :width="size.width"
+    :height="size.height"
+    :preserveAspectRatio="preserveAspectRatio"
   >
     <path :d="path" />
   </svg>
@@ -15,27 +17,40 @@ import { MdiIconString } from './MdiIcon'
 export interface MdiIconProps {
   width?: string,
   height?: string,
+  size?: string,
   flipX?: boolean,
   flipY?: boolean,
   icon: MdiIconString,
+  preserveAspectRatio?: string,
 }
 
 const props = withDefaults(defineProps<MdiIconProps>(), {
-  width: '1em',
-  height: '1em',
+  width: '24',
+  height: 'auto',
+  size: '',
   flipX: false,
   flipY: false,
+  preserveAspectRatio: 'none'
 })
 
 const path: Ref<string> = ref('')
 
-// Dynamically set css variables for flipping the icon.
-const styles: ComputedRef<any> = computed(() => ({
-  '--flip-x': props.flipX ? '-1' : '1',
-  '--flip-y': props.flipY ? '-1' : '1',
-  'width': '1em',
-  'height': 'auto',
+const flip: ComputedRef<any> = computed(() => ({
+  x: props.flipX ? '-1' : '1',
+  y: props.flipY ? '-1' : '1',
 }))
+const size: ComputedRef<any> = computed(() => {
+  if (props.size !== "") {
+    return {
+      width: props.size,
+      height: props.size
+    }
+  }
+  return {
+    width: props.width,
+    height: props.height === "auto" ? props.width : props.height,
+  }
+}) 
 
 // Update the path with the corresponding SVG data from @mdi/js.
 async function updateIcon() {
@@ -51,7 +66,7 @@ await updateIcon()
 
 <style scoped>
 svg {
-  transform: scaleX(var(--flip-x, 1)) scaleY(var(--flip-y, 1));
+  transform: scaleX(v-bind(flip.x)) scaleY(v-bind(flip.y));
 }
 
 path {
