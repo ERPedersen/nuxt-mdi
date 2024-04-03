@@ -29,13 +29,6 @@ Install the `nuxt-mdi` dependency to your project using your preferred package m
 
 ```bash
 npx nuxi@latest module add nuxt-mdi
-```
-```bash
-npx nuxi@latest module add nuxt-mdi
-```
-```bash
-npx nuxi@latest module add nuxt-mdi
-```
 
 ### Activation
 
