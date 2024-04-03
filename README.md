@@ -28,13 +28,13 @@ Add 7,000+ icons to your Nuxt project, from [Material Design Icons](https://pict
 Install the `nuxt-mdi` dependency to your project using your preferred package manager:
 
 ```bash
-pnpm add -D nuxt-mdi
+npx nuxi@latest module add nuxt-mdi
 ```
 ```bash
-yarn add --dev nuxt-mdi
+npx nuxi@latest module add nuxt-mdi
 ```
 ```bash
-npm install --save-dev nuxt-mdi
+npx nuxi@latest module add nuxt-mdi
 ```
 
 ### Activation
