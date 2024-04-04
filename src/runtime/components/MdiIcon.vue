@@ -33,8 +33,8 @@ const path: Ref<string> = ref('')
 const styles: ComputedRef<any> = computed(() => ({
   '--flip-x': props.flipX ? '-1' : '1',
   '--flip-y': props.flipY ? '-1' : '1',
-  'width': '1em',
-  'height': 'auto',
+  'width': props.width,
+  'height': props.height,
 }))
 
 // Update the path with the corresponding SVG data from @mdi/js.
