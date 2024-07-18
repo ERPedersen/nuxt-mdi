@@ -9,8 +9,9 @@
 
 <script setup lang="ts">
 import { importIcon } from '../library/loader'
-import { Ref, ComputedRef, computed, ref, watch } from 'vue'
-import { MdiIconString } from './MdiIcon'
+import type { Ref, ComputedRef } from 'vue'
+import { computed, ref, watch } from 'vue'
+import type { MdiIconString } from './MdiIcon'
 
 export interface MdiIconProps {
   width?: string,
