@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.1.1
+
+[compare changes](https://undefined/undefined/compare/v2.1.0...v2.1.1)
+
+### 🏡 Chore
+
+- Update @mdi/js (29592a5)
+
+### ❤️  Contributors
+
+- Emil Rosenius Pedersen <erp@emilrosenius.com>
+
 ## v2.1.0
 
 [compare changes](https://undefined/undefined/compare/v1.1.6...v2.1.0)
