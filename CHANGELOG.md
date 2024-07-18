@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v2.1.0
+
+[compare changes](https://undefined/undefined/compare/v1.1.6...v2.1.0)
+
+### 🚀 Enhancements
+
+- Introduce 'size' property (aafb06d)
+
+### 📖 Documentation
+
+- Use new `nuxi module add` command in installation (d8d91ca)
+
+### 🏡 Chore
+
+- Test bundler module resolution (588ae12)
+- Remove dupes (ac617a1)
+- Indicate compatibility with new v4 major (6ad7635)
+
+### ❤️  Contributors
+
+- Emil Rosenius Pedersen <erp@emilrosenius.com>
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+
 ## v1.1.6
 
 [compare changes](https://undefined/undefined/compare/v1.1.5...v1.1.6)
