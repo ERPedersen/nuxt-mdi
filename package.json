@@ -28,7 +28,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@mdi/js": "^7.2.96",
+    "@mdi/js": "^7.4.47",
     "@nuxt/kit": "^3.6.5",
     "defu": "^6.1.4"
   },
