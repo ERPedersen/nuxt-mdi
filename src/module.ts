@@ -1,7 +1,7 @@
 import { addComponent, createResolver, defineNuxtModule } from '@nuxt/kit'
+import defu from 'defu'
 
 export interface ModuleOptions {
-  cache: false | 'localStorage'
   defaultSize: string | number
   componentName: string
 }
@@ -15,12 +15,16 @@ export default defineNuxtModule<ModuleOptions>({
     },
   },
   defaults: {
-    cache: 'localStorage',
     defaultSize: '1em',
     componentName: 'MdiIcon',
   },
-  setup(options) {
+  setup(options, nuxt) {
     const resolver = createResolver(import.meta.url)
+
+    nuxt.options.runtimeConfig.public.mdi = defu(nuxt.options.runtimeConfig.public.mdi, {
+      defaultSize: options.defaultSize
+    })
+
     addComponent({
       name: options.componentName,
       filePath: resolver.resolve('runtime/components/MdiIcon.vue'),

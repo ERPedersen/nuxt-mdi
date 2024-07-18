@@ -1,9 +1,8 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
+  css: ['@/main.css'],
   mdi: {
-    cache: false,
     componentName: 'MdiIcon',
-    defaultSize: '1em'
   },
   devtools: { enabled: true }
 })

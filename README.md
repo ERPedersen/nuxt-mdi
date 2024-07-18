@@ -54,9 +54,10 @@ The module will automatically make the `MdiIcon` component available to your app
 
 ### Props:
 
-- `icon` (required): The name of the icon to display.
-- `flipX` (optional): Flip the icon on the X axis.
-- `flipY` (optional): Flip the icon on the Y axis.
+- `icon` (string, required): The name of the icon to display.
+- `size` (boolean, default: `'1em'`): Set the size of the icon. Defaults to `1em`.
+- `flipX` (boolean, default: `false`): Flip the icon on the X axis.
+- `flipY` (boolean, default: `false`): Flip the icon on the Y axis.
 
 ## Configuration
 
@@ -66,16 +67,11 @@ You can configure this module by adding an `mdi` section to the `nuxt.config.ts`
 export default defineNuxtConfig({
   // ...
   mdi: {
-    cache: false,
     componentName: 'MdiIcon',
     defaultSize: '1em'
   }
 })
 ```
-
-### Cache: `cache`
-
-Once an icon is loaded, it is automatically cached in localStorage. This means that the icon will be loaded from localStorage instead of the network on subsequent requests. This is enabled by default, but can be disabled by setting `cache` to `false`.
 
 ### Component name: `componentName`
 
