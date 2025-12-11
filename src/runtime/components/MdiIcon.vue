@@ -34,7 +34,7 @@ const props = withDefaults(defineProps<MdiIconProps>(), {
   size: undefined,
   flipX: false,
   flipY: false,
-  preserveAspectRatio: 'meet',
+  preserveAspectRatio: 'xMidYMid meet',
 })
 
 const _size = computed(() => {
